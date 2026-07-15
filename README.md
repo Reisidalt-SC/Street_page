@@ -1,4 +1,4 @@
-
+![Street Landing Page](./screenshots/hero.png)
 
 # Street Landing Page Ptbr vers
 
@@ -11,6 +11,8 @@ Study project for a modern landing page inspired by urban aesthetics, featuring 
 * CSS3
 * JavaScript
 * Sass
+
+* ![Street Landing Page](./screenshots/about.png)
 
 ## Status
 
