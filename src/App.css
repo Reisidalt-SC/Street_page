@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background: black;
+    scroll-margin-top: 90px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --red--1 : #a91d3a;
+    --wine--1: #33171d;
+    --gray--1: #2b2b2b;
+    --gray--font: #6f6f6f;
+    --red--hover: #c73659;
+    --wine--background: #191516;
+    --gray--background: rgb(21, 21, 21);
+    --dark--gray: rgb(43, 43, 43);
+    --header--background: rgb(21, 21, 21);
+    --white--1: #eeeeee;
+    --input--background: #202020;
+}
+
+.box_wrapper section{
+   padding: 10vh clamp(40px, 3vw, 80px);
+   scroll-margin-top: 90px;
+}

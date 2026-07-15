@@ -1,0 +1,130 @@
+.services_section {
+  min-height: 100vh;
+  color: var(--white--1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 60px;
+
+  .services_title {
+    align-self: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    & h1 {
+      font-size: clamp(2.5rem, 2.2rem + 0.8vw, 3.3rem);
+      font-weight: 900;
+      position: relative;
+      line-height: 1.2;
+
+      & strong {
+        color: var(--red--1);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 20%;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 4px;
+        background-color: var(--red--1);
+      }
+    }
+
+    & span {
+      color: var(--gray--font);
+      font-size: clamp(1.2rem, 1.1rem + 0.3vw, 1.4rem);
+    }
+  }
+
+  .services_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .service_field {
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: space-between;
+      border: 1px solid var(--dark--gray);
+      background-color: var(--gray--background);
+
+      .service_icon {
+        padding: 12px;
+        font-size: clamp(1.3rem, 1.2rem + 0.3vw, 1.6rem);
+        display: flex;
+        align-self: flex-start;
+        align-items: center;
+        justify-content: center;
+        color: var(--red--1);
+        border: none;
+        background-color: var(--wine--1);
+      }
+
+      .service_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 15px;
+
+        & p {
+          color: var(--gray--font);
+          font-size: clamp(1rem, 0.95rem + 0.25vw, 1.2rem);
+          line-height: 1.5;
+        }
+      }
+
+      .service_tags {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        & span {
+          padding: 8px 10px;
+          font-size: clamp(0.8rem, 0.75rem + 0.25vw, 1rem);
+          color: var(--gray--font);
+          border: 1px solid var(--dark--gray);
+        }
+      }
+    }
+  }
+
+  .services_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+    & span {
+      color: var(--gray--font);
+      font-size: clamp(1rem, 0.95rem + 0.25vw, 1.2rem);
+    }
+
+    & button {
+      font-size: clamp(1.1rem, 1rem + 0.3vw, 1.3rem);
+      padding: 10px 30px;
+      background-color: transparent;
+      color: var(--red--1);
+      border: 1px solid var(--red--1);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .services_section {
+    .services_grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}
