@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://reisidalt-sc.github.io/Street/",
+  "homepage": "https://github.com/Reisidalt-SC/Street_page.git",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
